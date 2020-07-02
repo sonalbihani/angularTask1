@@ -14,8 +14,8 @@ export class PlanCardComponent implements OnInit {
     {
       name: "FREE",
       price: 0,
-      single_user: true,
-      gb5_storage: true,
+      user: "Single User",
+      storage: "5 GB Storage",
       unlimited_public_projects: true,
       comm_access: true,
       unlimited_private_projects: false,
@@ -26,8 +26,8 @@ export class PlanCardComponent implements OnInit {
     {
       name: "PLUS",
       price: 9,
-      single_user: true,
-      gb5_storage: true,
+      user: "5 Users",
+      storage: "50 GB Storage",
       unlimited_public_projects: true,
       comm_access: true,
       unlimited_private_projects: true,
@@ -38,8 +38,8 @@ export class PlanCardComponent implements OnInit {
     {
       name: "PRO",
       price: 49,
-      single_user: true,
-      gb5_storage: true,
+      user: "Unlimited Users",
+      storage: "150 GB Storage",
       unlimited_public_projects: true,
       comm_access: true,
       unlimited_private_projects: true,

@@ -4,12 +4,12 @@
     <h6 class="card-price text-center">${{price}}<span class="period">/month</span></h6>
     <hr>
     <ul class="fa-ul">
-      <li [ngClass]="{'text-muted': !data.single_user}"><span class="fa-li">
-          <i [ngClass]="{'fas': true, 'fa-check': data.single_user, 'fa-times': !data.single_user }">
-          </i></span>Single User</li>
-      <li [ngClass]="{'text-muted': !data.gb5_storage}"><span class="fa-li">
-          <i [ngClass]="{'fas': true, 'fa-check': data.gb5_storage, 'fa-times': !data.gb5_storage }">
-          </i></span>5GB Storage</li>
+      <li><span class="fa-li">
+          <i [ngClass]="{'fas': true, 'fa-check': true}">
+          </i></span>{{data.user}}</li>
+      <li><span class="fa-li">
+          <i [ngClass]="{'fas': true, 'fa-check': true }">
+          </i></span>{{data.storage}}</li>
       <li [ngClass]="{'text-muted': !data.unlimited_public_projects}"><span class="fa-li">
           <i [ngClass]="{'fas': true, 'fa-check': data.unlimited_public_projects, 'fa-times': !data.unlimited_public_projects }">
           </i></span>Unlimited Public Projects</li>
