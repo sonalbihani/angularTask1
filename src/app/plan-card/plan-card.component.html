@@ -1,0 +1,37 @@
+<div class="card mb-5 mb-lg-0">
+  <div class="card-body">
+    <h5 class="card-title text-muted text-uppercase text-center">{{plan_name}}</h5>
+    <h6 class="card-price text-center">${{price}}<span class="period">/month</span></h6>
+    <hr>
+    <ul class="fa-ul">
+      <li [ngClass]="{'text-muted': !data.single_user}"><span class="fa-li">
+          <i [ngClass]="{'fas': true, 'fa-check': data.single_user, 'fa-times': !data.single_user }">
+          </i></span>Single User</li>
+      <li [ngClass]="{'text-muted': !data.gb5_storage}"><span class="fa-li">
+          <i [ngClass]="{'fas': true, 'fa-check': data.gb5_storage, 'fa-times': !data.gb5_storage }">
+          </i></span>5GB Storage</li>
+      <li [ngClass]="{'text-muted': !data.unlimited_public_projects}"><span class="fa-li">
+          <i [ngClass]="{'fas': true, 'fa-check': data.unlimited_public_projects, 'fa-times': !data.unlimited_public_projects }">
+          </i></span>Unlimited Public Projects</li>
+      <li [ngClass]="{'text-muted': !data.comm_access}"><span class="fa-li">
+          <i [ngClass]="{'fas': true, 'fa-check': data.comm_access, 'fa-times': !data.comm_access }">
+          </i></span>Community Access</li>
+      <li [ngClass]="{'text-muted': !data.unlimited_private_projects}"><span class="fa-li">
+          <i [ngClass]="{'fas': true, 'fa-check': data.unlimited_private_projects, 'fa-times': !data.unlimited_private_projects }">
+          </i></span>Unlimited Private Projects</li>
+      <li [ngClass]="{'text-muted': !data.dedicated_phone_support}"><span class="fa-li">
+          <i [ngClass]="{'fas': true, 'fa-check': data.dedicated_phone_support, 'fa-times': !data.dedicated_phone_support }">
+          </i></span>Dedicated Phone Support</li>
+      <li [ngClass]="{'text-muted': !data.free_subdomain}"><span class="fa-li">
+          <i [ngClass]="{'fas': true, 'fa-check': data.free_subdomain, 'fa-times': !data.free_subdomain }">
+          </i></span>Free Subdomain</li>
+      <li [ngClass]="{'text-muted': !data.monthly_stat_report}"><span class="fa-li">
+          <i [ngClass]="{'fas': true, 'fa-check': data.monthly_stat_report, 'fa-times': !data.monthly_stat_report }"></i>
+        </span>Monthly Status Reports</li>
+    </ul>
+    <ul class="fa-ul">
+
+    </ul>
+    <a href="#" class="btn btn-block btn-primary text-uppercase">Button</a>
+  </div>
+</div>

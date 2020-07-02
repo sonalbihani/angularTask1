@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularTask1';
+  dataList = [
+    {
+      name: "FREE",
+      price: 0
+    },
+    {
+      name: "PLUS",
+      price: 9
+    },
+    {
+      name: "PRO",
+      price: 49
+    }
+  ]
 }
